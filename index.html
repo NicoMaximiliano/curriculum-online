@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>CV Online</title>
+</head>
+<body>
+    <header class="py-3 mb-4 text-center text-small">
+        <div class="container">
+            <h1>Curriculum Vitae Online</h1>
+            <p class="mb-1">Sitio web creado para realizar un curriculum vitae</p>
+        </div>
+    </header>
+
+    <main>
+        <form class="row g-3" action="" id="form-curriculum">
+          
+          <div class="container">
+            <h2>Informacion Personal</h2>
+            
+            <div class="mb-3">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-control" type="text" placeholder="Ingrese el nombre" name="nombre" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="apellido">Apellido</label>
+                <input class="form-control" type="text" placeholder="Ingrese el apellido" name="apellido" id="apellido">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="edad">Edad</label>
+                <input class="form-control" type="text" placeholder="Ingrese la edad" name="edad" id="edad">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="foto">Foto</label>
+                <input class="form-control" type="file" name="foto" id="foto">
+            </div>
+          </div>
+           
+          <div class="container">
+            <h2>Perfil Profesional</h2>
+     
+            <div class="mb-3">
+              <label class="form-label" for="descripcion">Descripcion del perfil</label>
+              <textarea class="form-control"  rows="3" id="descripcion"></textarea>
+            </div>
+          </div>    
+            
+ 
+          <div class="container">
+            <h2>Datos de contacto</h2>
+            
+            <div class="mb-3">
+                <label class="form-label" for="telefono">Telefono</label>
+                <input class="form-control" type="text" placeholder="Ingrese el telefono" name="telefono" id="telefono">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="text" placeholder="Ingrese el email" name="email" id="email">
+            </div>
+          </div>  
+          
+          <div class="container">
+              <h2>Habilidades</h2>
+              
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="habilidad" placeholder="Ingresa habilidad" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-primary" type="button" id="agregar-habilidad">Agregar</button>
+              </div>
+          </div>
+              
+          <div class="container">
+              <h2>Estudios</h2>
+              
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="primaria">Primaria</label>
+                  <input class="form-check-input" type="checkbox" id="primaria" value="Primaria">
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="secundaria">Secundaria</label>
+                  <input class="form-check-input" type="checkbox" id="secundaria" value="Secundaria">
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="tecnico">Tecnico</label>
+                  <input class="form-check-input" type="checkbox" id="tecnico" value="Secundaria Tecnica">
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="universitario">Universitario</label>
+                  <input class="form-check-input" type="checkbox" id="universitario" value="Universitario">
+              </div>
+          </div>
+              
+          <div class="container">
+              <h2>Certificaciones</h2>
+
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="certificacion" placeholder="Ingresa certificacion" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-primary" type="button" id="agregar-certificacion">Agregar</button>
+              </div>
+          </div>                          
+           
+          <div class="container">
+             <div class="col-12">
+               <button class="btn btn-primary" id="generar-curriculum">Generar Curriculum</button>
+             </div>
+          </div>
+
+        </form>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small border-top">
+        <div class="container">
+            <p class="mb-1">&copy; 2017–2023 Company Nicolás Orellano</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/form.js"></script>
+    <script src="js/certificacion.js"></script>
+    <script src="js/habilidad.js"></script>
+    <script src="js/estudios.js"></script>
+</body>
+</html>

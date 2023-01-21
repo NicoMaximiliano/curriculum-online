@@ -1,0 +1,26 @@
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,h2{
+    font-weight: bold;
+}
+
+.form-label{
+   font-weight: bold;
+}
+
+.form-control{
+    background-color: #F7F7F7;
+}
+
+.container{
+    margin-bottom: 50px;
+}
+
+#btn{
+
+    height: 50px;
+    font-weight: bold;
+}
