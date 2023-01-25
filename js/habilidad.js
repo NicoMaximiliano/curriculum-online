@@ -22,3 +22,4 @@ function agregarHabilidades(habilidad) {
 function getHabilidades(){
     return habilidades;
 }
+

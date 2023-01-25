@@ -3,6 +3,15 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+
+.container{
+    width: 60%;
+}
+
+#titulo-info-personal{
+    margin-top: 40px;
+}
+
 h1,h2{
     font-weight: bold;
 }
@@ -20,7 +29,19 @@ h1,h2{
 }
 
 #btn{
-
     height: 50px;
     font-weight: bold;
+}
+
+.parrafo{
+    font-weight: bold;
+}
+
+.col-12{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
