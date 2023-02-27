@@ -1,47 +1,176 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
+    background-color: #d6eaff;
 }
 
-
-.container{
-    width: 60%;
-}
-
-#titulo-info-personal{
-    margin-top: 40px;
+main{
+    margin-bottom: 20px;
 }
 
 h1,h2{
     font-weight: bold;
 }
 
-.form-label{
-   font-weight: bold;
+h2{
+    padding-top: 30px;
 }
 
-.form-control{
+form{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.botones{
+    padding-bottom: 30px;
+}
+
+.boton{
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer{
+    border-top: 1px solid gray;
+    margin-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+
+.cabecera-curriculum .container{
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+
+.cabecera-curriculum .foto-perfil{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cabecera-curriculum .container-perfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.curriculum .form-p{
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.curriculum #titulo-perfil-profesional, .curriculum #titulo-info-personal, .curriculum #titulo-datos-contacto,
+.curriculum #titulo-habilidades, .curriculum #titulo-educacion, .curriculum #titulo-certificaciones{
+    border-bottom: 3px solid #0d6efd;
+}
+
+.form .form-label{
+    font-weight: bold;
+}
+
+.form .form-control{
     background-color: #F7F7F7;
 }
 
-.container{
-    margin-bottom: 50px;
+.form #descripcion{
+    height: 150px;
 }
 
-#btn{
-    height: 50px;
-    font-weight: bold;
+.form .listado-certificaciones, .listado-habilidades, .listado-educacion{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
-.parrafo{
-    font-weight: bold;
+.form .container-certificaciones{
+    padding-bottom: 30px;
 }
 
-.col-12{
-    text-align: center;
+.form .elemento-li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-a{
+.form .elemento-li p{
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.curriculum ul{
+    padding-left: 0;
+}
+
+.curriculum li{
+    list-style: none;
+}
+
+.curriculum .certificaciones-curriculum{
+    padding-bottom: 30px;
+}
+
+#boton-generar-curriculum, #boton-ver-curriculum, #boton-volver, #boton-imprimir{
+    width: 50%;
+    min-width: 241px;
+    min-height: 38px;
+}
+
+.form #boton-ver-curriculum a, .curriculum #boton-volver a{
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 320px) {
+    .boton{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form #boton-generar-curriculum, .form #boton-ver-curriculum, .curriculum #boton-volver, .curriculum #boton-imprimir{
+        min-width: 175px;
+        min-height: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-curriculum{
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecera-curriculum .container-perfil{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 616px) {
+    .form .estados-civiles{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1223px) {
+    .cabecera-curriculum{
+        margin-bottom: 0;
+    }
+
+    .cabecera-curriculum .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cabecera-curriculum .foto-perfil{
+        margin-bottom: 10px;
+        align-self: center;
+    }
 }

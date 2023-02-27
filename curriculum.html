@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,120 +8,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Curriculum</title>
 </head>
 <body>
-    <header class="py-3 mb-4 text-center text-small">
+    <header class="cabecera-curriculum py-3 mb-4">
         <div class="container">
-            <h1 class="titulo-nombre"></h1>
-            <p class="subtitulo-profesion mb-1">Desarrollador FrontEnd Junior</p>
+            <img class="foto-perfil" src="" alt="">
+            <div class="container-perfil">
+                <h1 class="titulo-nombre"></h1>
+                <p class="descripcion">
+                </p>
+            </div>
         </div>
     </header>
 
-    <main id="principal">
-        <form class="row g-3" action="" id="form-curriculum">
-            <div class="container">
-                <h2>Perfil Profesional</h2>
+    <main class="curriculum">
+        <form class="form-curriculum container">
 
+                <h2 class="titulo" id="titulo-info-personal">Informacion Personal</h2>
                 <div class="mb-3">
-                    <p class="parrafo border-bottom">Descripcion: <span class="descripcion"></span></p>
-                </div>
-            </div>
-
-            <div class="container">
-                <h2>Informacion Personal</h2>
-
-                <div class="mb-3">
-                    <p class="parrafo border-bottom">Nombre: <span class="nombre"></span></p>
+                    <p class="form-p form-label">Edad: <span id="edad"></span></p>
                 </div>
 
                 <div class="mb-3">
-                    <p class="parrafo border-bottom">Edad: <span class="edad"></span></p>
+                    <p class="form-p form-label">Estado civil: <span id="estado-civil"></span></p>
                 </div>
 
-            </div>
 
-            <div class="container">
-                <h2>Datos de contacto</h2>
-
+                <h2 class="titulo" id="titulo-datos-contacto">Datos de contacto</h2>
                 <div class="mb-3">
-                    <p class="parrafo border-bottom">Telefono: <span class="telefono"></span></p>
+                    <p class="form-p form-label">Telefono: <span id="telefono"></span></p>
                 </div>
 
                 <div class="mb-3">
-                    <p class="parrafo border-bottom">Email: <span class="email"></span></p>
+                    <p class="form-p form-label">Email: <span id="email"></span></p>
                 </div>
-            </div>
 
-            <div class="container">
-                <h2>Habilidades</h2>
+                <div class="mb-3">
+                    <p class="form-p form-label">Linkedin: <span id="linkedin"></span></p>
+                </div>
 
+
+                <h2 class="titulo" id="titulo-habilidades">Habilidades</h2>
                 <div class="mb-3">
                     <ul class="lista-habilidades">
-                        <!--
-                        <li>
-                            <p class="parrafo border-bottom" id="parrafo0"></p>
-                        </li>
-                        <li>
-                            <p class="parrafo border-bottom" id="parrafo1"></p>
-                        </li>
-                        <li>
-                            <p class="parrafo border-bottom" id="parrafo2"></p>
-                        </li>
-                        <li>
-                            <p class="parrafo border-bottom" id="parrafo3"></p>
-                        </li>
-                        -->
 
                     </ul>
                 </div>
-            </div>
 
-            <div class="container">
-                <h2>Estudios</h2>
 
+                <h2 class="titulo" id="titulo-educacion">Educacion</h2>
                 <div class="mb-3">
-                    <ul class="lista-estudios">
+                    <ul class="listado-educacion">
 
                     </ul>
                 </div>
-            </div>
 
-            <div class="container">
-                <h2>Certificaciones</h2>
 
-                <div class="mb-3">
+                <h2 class="titulo" id="titulo-certificaciones">Certificaciones</h2>
+                <div class="certificaciones-curriculum mb-3">
                     <ul class="lista-certificaciones">
 
                     </ul>
                 </div>
-            </div>
-
-            <div class="container">
-                <div class="col-12">
-                    <button class="btn btn-primary">
-                        <a href="index.html">Volver</a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="col-12">
-                    <button class="btn btn-primary" id="boton-imprimir">Imprimir</button>
-                </div>
-            </div>
-
         </form>
+
+        <div class="botones container">
+            <div class="boton col-12">
+                <button class="btn btn-primary" id="boton-imprimir">Imprimir</button>
+            </div>
+
+            <div class="boton col-12">
+                <button class="btn btn-primary" id="boton-volver">
+                    <a href="index.html">Volver</a>
+                </button>
+            </div>
+        </div>
     </main>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small border-top">
+    <footer class="text-muted text-center text-small">
         <div class="container">
-            <p class="mb-1">&copy; 2017–2023 Company Nicolás Orellano</p>
+            <p class="mb-1">&copy; Desarrollado por Nicolás M. Orellano</p>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script type="module" src="js/curriculum.js"></script>
